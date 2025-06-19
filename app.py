@@ -122,7 +122,7 @@ if login():
             })
 
         df_edit = pd.DataFrame(extracted)
-        edited_df = st.experimental_data_editor(df_edit, num_rows="dynamic")
+        edited_df = st.data_editor(df_edit, num_rows="dynamic")
 
         if st.button("Upload Card Data to Pipedrive"):
             user_id = get_user_id()
